@@ -11,48 +11,31 @@
     <div id="header">
         <p><strong>Wuwu´s Meme Collection</strong></p>
     </div>
-    <div id="content">
-        <div>
-          <button class="box-shadow"><h2>Random Meme</h2></button>
-          <div id="random-display"><!--dispay meme --></div>
-        </div>
-        <div>
-            <h2>Browse Collection</h2>
-            <div class="card-box">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+    <div id="contentbox">
+            <div class="big-card-container">
+                <div id="memecard" class="big-card">
+                    <img id="meme"><!--Meme Images-->
+                </div>
+                <div>
+                    <button class="box-shadow"  onclick="previousMeme()"><h2>Previous Meme</h2></button>
+                    <button class="box-shadow"  onclick="newMeme()"><h2>Random Meme</h2></button>
+                </div>
             </div>
-        </div>
+            <div class="big-card-container">
+                <div id="videocard" class="big-card">
+                    <video id="video"></video><!--Meme Gifs-->
+                </div>
+                <div>
+                    <button class="box-shadow"  onclick="previousVideo()"><h2>Previous Video</h2></button>
+                    <button class="box-shadow"  onclick="newVideo()"><h2>Random Video</h2></button>
+                </div>
+            </div>
+            <div id="meme-small-cards" class="big-card-container card-box">
+
+            </div>
+            <div id="video-small-cards" class="big-card-container card-box-small">
+                
+            </div>
     </div>
 </body>
 <script src="javascript.js"></script>

@@ -40,22 +40,6 @@ function previousMeme (){
 }
 
 
-// Open the Modal Image
-function openModalImage() {
-    var modaldiv = document.createElement("div");
-    modaldiv.setAttribute("id", "myModal");
-    modaldiv.classList.add("modal");
-    var span = document.createElement("span");
-    span.classList.add("close");
-    span.setAttribute("onclick='closeModal()'");
-    span.innerText("&times;");
-    modaldiv.appendChild(span);
-    var modalcontent = document.createElement("div");
-    modalcontent.classList.add("modal-content");
-    modaldiv.appendChild(modalcontent);
-    var modalimg = document.createElement("img");
-    modalimg.src = imgArray[i];
-}
 
 
 //Video Part
@@ -107,7 +91,7 @@ function previousVideo (){
 
 for(let i = 0; i < 894; i++){
     var cardboximg = document.getElementById("meme-small-cards");
-    cardboximg.setAttribute("onclick", "'openModalImage'");
+    cardboximg.setAttribute("onclick", "openModalImage()");
     const cardimg = document.createElement("img");
     cardimg.classList.add("card");
     cardimg.classList.add("box-shadow");
@@ -130,6 +114,25 @@ for(let i = 0; i < 489; i++){
 
 
 //Modal 
+
+
+// Open the Modal Image
+function openModalImage() {
+    var modaldiv = document.createElement("div");
+    modaldiv.setAttribute("id", "myModal");
+    modaldiv.classList.add("modal");
+    var span = document.createElement("span");
+    span.classList.add("close");
+    span.setAttribute("onclick","closeModal()");
+    var spantime = document.querySelector("span");
+    spantime.innerHTML("&times;");
+    modaldiv.appendChild(span);
+    var modalcontent = document.createElement("div");
+    modalcontent.classList.add("modal-content");
+    modaldiv.appendChild(modalcontent);
+    var modalimg = document.createElement("img");
+    modalimg.src = imgArray[i];
+}
 
 
 // Close the Modal

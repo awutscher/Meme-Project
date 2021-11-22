@@ -45,8 +45,6 @@ function previousMeme (){
 }
 
 
-
-
 //Video Part
 
 var videoArray = [];

@@ -103,6 +103,7 @@ for(let i = 0; i < 894; i++){
     cardimg.src = imgArray[i+1];
     cardimg.setAttribute("id", "img" + i);
     cardimg.setAttribute("onclick", "reply_click(this.id)");
+    //doesnt work yet
     /* cardimg.setAttribute("onclick", "openModal"); */
     cardboximg.appendChild(cardimg);
 }
@@ -132,14 +133,13 @@ function reply_click(clicked_id){
     var clickedimgsrc = document.getElementById(clicked_id).src;
     console.log(clickedimgsrc);
 }
-
+// doesnt work yet
 /* function openModal (){
     document.getElementById("myModal").style.display = "block";
     var ligthboximg = document.createElement("img");
     ligthboximg.src = clickedimgsrc;
     document.getElementById("modal-content").appendChild(ligthboximg);
-}
- */
+} */
 
 
 // Close the Modal

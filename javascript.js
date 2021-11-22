@@ -91,10 +91,10 @@ function previousVideo (){
 
 for(let i = 0; i < 894; i++){
     var cardboximg = document.getElementById("meme-small-cards");
-    cardboximg.setAttribute("onclick", "openModalImage()");
     const cardimg = document.createElement("img");
     cardimg.classList.add("card");
     cardimg.classList.add("box-shadow");
+    cardimg.setAttribute("loading", "lazy");
     cardimg.src = imgArray[i+1];
     cardboximg.appendChild(cardimg);
 }
@@ -106,6 +106,7 @@ for(let i = 0; i < 489; i++){
     const cardvid = document.createElement("video");
     cardvid.classList.add("card");
     cardvid.classList.add("box-shadow");
+    cardvid.setAttribute("loading", "lazy");
     cardvid.src = videoArray[i+1];
     cardboxvideo.appendChild(cardvid);
 }

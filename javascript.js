@@ -119,7 +119,6 @@ for(let i = 0; i < 489; i++){
     const cardvid = document.createElement("video");
     cardvid.classList.add("card");
     cardvid.classList.add("box-shadow");
-    cardvid.setAttribute("loading", "lazy");
     cardvid.src = videoArray[i+1];
     cardboxvideo.appendChild(cardvid);
 } */

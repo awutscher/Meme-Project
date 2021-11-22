@@ -136,7 +136,7 @@ function reply_click(clicked_id){
 /* function openModal (){
     document.getElementById("myModal").style.display = "block";
     var ligthboximg = document.createElement("img");
-    ligthboximg.src = clickedimg;
+    ligthboximg.src = clickedimgsrc;
     document.getElementById("modal-content").appendChild(ligthboximg);
 }
  */

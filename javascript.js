@@ -101,10 +101,15 @@ for(let i = 0; i < 894; i++){
     cardimg.classList.add("box-shadow");
     cardimg.setAttribute("loading", "lazy");
     cardimg.src = imgArray[i+1];
+    cardimg.setAttribute("id", "img" + i);
+    cardimg.setAttribute("onclick", "reply_click(this.id)");
+    /* cardimg.setAttribute("onclick", "openModal"); */
     cardboximg.appendChild(cardimg);
 }
 
 //small Cards Video 
+
+var vidid = "";
 
 for(let i = 0; i < 489; i++){
     var cardboxvideo = document.getElementById("video-small-cards");
@@ -117,42 +122,24 @@ for(let i = 0; i < 489; i++){
 }
 
 
-
-
 //Modal 
 
+//Open Modal 
 
-// Open the Modal Image
-function openModalImage() {
-    var modaldiv = document.createElement("div");
-    modaldiv.setAttribute("id", "myModal");
-    modaldiv.classList.add("modal");
-    var span = document.createElement("span");
-    span.classList.add("close");
-    span.setAttribute("onclick","closeModal()");
-    var spantime = document.querySelector("span");
-    spantime.innerHTML("&times;");
-    modaldiv.appendChild(span);
-    var modalcontent = document.createElement("div");
-    modalcontent.classList.add("modal-content");
-    modaldiv.appendChild(modalcontent);
-    var modalimg = document.createElement("img");
-    modalimg.src = imgArray[i];
+var clickedimgsrc = false;
+
+function reply_click(clicked_id){
+    var clickedimgsrc = document.getElementById(clicked_id).src;
+    console.log(clickedimgsrc);
 }
 
-
-// Close the Modal
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+/* function openModal (){
+    document.getElementById("myModal").style.display = "block";
+    var ligthboximg = document.createElement("img");
+    ligthboximg.src = clickedimg;
+    document.getElementById("modal-content").appendChild(ligthboximg);
 }
-
-
-  
-/* 
-  <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content"></div> */
-
+ */
 
 
 // Close the Modal

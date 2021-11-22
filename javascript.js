@@ -108,9 +108,11 @@ for(let i = 0; i < 894; i++){
     cardboximg.appendChild(cardimg);
 }
 
+
+// disabled (do Thumbnails) due to performance issues
 //small Cards Video 
 
-var vidid = "";
+/* var vidid = "";
 
 for(let i = 0; i < 489; i++){
     var cardboxvideo = document.getElementById("video-small-cards");
@@ -120,7 +122,7 @@ for(let i = 0; i < 489; i++){
     cardvid.setAttribute("loading", "lazy");
     cardvid.src = videoArray[i+1];
     cardboxvideo.appendChild(cardvid);
-}
+} */
 
 
 //Modal 

@@ -1,4 +1,9 @@
+"use strict";
+
+
+
 // Meme Part
+var newLength = "";
 var imgArray = [];
 var imgArrayStorage = [];
 

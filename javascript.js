@@ -92,7 +92,7 @@ function previousVideo (){
 
 // small Cards Image
 
-for(let i = 0; i < 894; i++){
+/* for(let i = 0; i < 894; i++){
     var cardboximg = document.getElementById("meme-small-cards");
     const cardimg = document.createElement("img");
     cardimg.classList.add("card");
@@ -103,9 +103,9 @@ for(let i = 0; i < 894; i++){
     cardimg.setAttribute("onclick", "reply_click(this.id)");
     //doesnt work yet
     /* cardimg.setAttribute("onclick", "openModal"); */
-    cardboximg.appendChild(cardimg);
+    /*cardboximg.appendChild(cardimg);
 }
-
+ */
 
 // disabled (do Thumbnails) due to performance issues
 //small Cards Video 
